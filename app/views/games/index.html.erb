@@ -5,7 +5,7 @@
 		<%@games.each do |game|%>
 		  <div class="col-sm-4 col-md-4 col-lg-4">
 		    <div class="thumbnail">
-		      <img src="<%=game.image%>" width="500px" height="250px" alt="...">
+		      <img src="<%=game.image%>" id="thumbnail_image" alt="...">
 		      <div class="caption">
 		        <h3 align="center"><%= game.name %></h3>
 		        <p><%= game.description %></p>
