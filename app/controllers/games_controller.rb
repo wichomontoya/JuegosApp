@@ -16,7 +16,8 @@ class GamesController < ApplicationController
 
   def score
     @game=Game.find(params[:id])
-    @ranking=Ranking.create({game_id:@game.id, user_id: current_user.id, score: params[:score].to_i})
+    @score=params[:score].to_i
+    @ranking=Ranking.create({game_id:@game.id, user_id: current_user.id, score: @score})
     pry
     redirect_to "/"
   end

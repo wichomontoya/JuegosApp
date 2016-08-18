@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     post "/games/:id/score" => "games#score", as: "score"
 
 	devise_for :users, controllers: {
-        sessions: 'users/sessions',registrations: 'users/registrations'
+        sessions: 'users/sessions', registrations: 'users/registrations'
       }
 
 
